@@ -115,7 +115,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 525px;
+  max-height: 700px;
   padding: 40px;
   border-radius: 10px;
   background: white;
@@ -209,7 +209,7 @@ body {
   .container {
     background: url("../images/bg-intro-mobile.png"), #ff7978;
     width: 99%;
-    min-height: 1000px;
+    min-height: 1500px;
     padding: 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -240,6 +240,7 @@ body {
   }
   .right .card .error {
     float: right;
+    padding-left: 0;
   }
 }
 

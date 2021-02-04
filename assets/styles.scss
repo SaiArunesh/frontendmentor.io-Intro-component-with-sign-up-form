@@ -81,7 +81,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
-        max-height: 525px;
+        max-height: 700px;
         padding: 40px;
         border-radius: 10px;
         background: white;
@@ -152,7 +152,7 @@ body {
     .container {
         background: url("../images/bg-intro-mobile.png"), rgb(255, 121, 120);
         width: 99%;
-        min-height: 1000px;
+        min-height: 1500px;
         padding: 20px;
         justify-content: center;
     }
@@ -183,7 +183,7 @@ body {
         }
         .card{
             .error{
-                float:right;
+                float:right;padding-left:0;
 
             }
         }
