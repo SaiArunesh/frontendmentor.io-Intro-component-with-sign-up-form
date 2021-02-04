@@ -40,12 +40,40 @@
 					<p><strong>Try it free 7 days </strong> then $20/mo. thereafter</p>
 				</div>
 				<div class="card">
-					<form action="">
-						<input id="FirstName" type="text" placeholder="First Name" />
-						<input id="lastName" type="text" placeholder="Last Name" />
-						<input id="Email Address" type="text" placeholder="Email Address" />
-						<input id="Password" type="text" placeholder="Password" />
-						<button type="submit">CLAIM YOUR FREE TRIAL</button>
+					<form>
+						<div class="firstName">
+							<input id="FirstName" type="text" placeholder="First Name" />
+							<div id="error1" class="error-icon1"></div>
+							<p class="error" id="error-first-name">
+								First Name cannot be empty
+							</p>
+						</div>
+
+						<div class="lastName">
+							<input id="LastName" type="text" placeholder="Last Name" />
+							<div id="error2" class="error-icon2"></div>
+							<p class="error" id="error-last-name">
+								Last Name cannot be empty
+							</p>
+						</div>
+
+						<div class="email">
+							<input id="Email" type="text" placeholder="Email Address" />
+							<div id="error3" class="error-icon3"></div>
+							<p class="error" id="error-email">
+								Looks like this is not an email
+							</p>
+						</div>
+
+						<div class="password">
+							<input id="Password" type="text" placeholder="Password" />
+							<div id="error4" class="error-icon4"></div>
+							<p class="error" id="error-password">Password cannot be empty</p>
+						</div>
+
+						<button type="button" onclick="check()">
+							CLAIM YOUR FREE TRIAL
+						</button>
 					</form>
 					<p>
 						Claim your free trial By clicking the button, you are agreeing to
@@ -63,5 +91,46 @@
 				>. Coded by <a href="#">Your Name Here</a>.
 			</p>
 		</footer>
+
+		<script>
+			function check() {
+				var firstName = document.getElementById('FirstName');
+				var lastName = document.getElementById('LastName');
+				var email = document.getElementById('Email');
+				var password = document.getElementById('Password');
+
+				if (firstName.innerText === '') {
+					document.getElementById('error-first-name').style.display = 'block';
+					document.getElementById('error1').style.display = 'block';
+				} else {
+					document.getElementById('error-first-name').style.display = 'none';
+					document.getElementById('error1').style.display = 'none';
+				}
+
+				if (lastName.innerText === '') {
+					document.getElementById('error-last-name').style.display = 'block';
+					document.getElementById('error2').style.display = 'block';
+				} else {
+					document.getElementById('error-last-name').style.display = 'none';
+					document.getElementById('error2').style.display = 'none';
+				}
+
+				if (email.innerText === '') {
+					document.getElementById('error-email').style.display = 'block';
+					document.getElementById('error3').style.display = 'block';
+				} else {
+					document.getElementById('error-email').style.display = 'none';
+					document.getElementById('error3').style.display = 'none';
+				}
+
+				if (password.innerText === '') {
+					document.getElementById('error-password').style.display = 'block';
+					document.getElementById('error4').style.display = 'block';
+				} else {
+					document.getElementById('error-password').style.display = 'none';
+					document.getElementById('error4').style.display = 'none';
+				}
+			}
+		</script>
 	</body>
 </html>

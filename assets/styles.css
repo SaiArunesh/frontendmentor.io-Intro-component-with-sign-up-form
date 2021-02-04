@@ -60,8 +60,10 @@ body {
 
 .left h1 {
   font-weight: 700;
-  font-size: 37px;
+  font-size: 40px;
+  line-height: 40px;
   color: white;
+  padding-bottom: 20px;
 }
 
 .left p {
@@ -105,7 +107,6 @@ body {
 }
 
 .right .card {
-  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +115,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 475px;
+  max-height: 525px;
   padding: 40px;
   border-radius: 10px;
   background: white;
@@ -125,11 +126,12 @@ body {
 .right .card input {
   margin-bottom: 20px;
   min-height: 57px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
   color: black;
   font-weight: 500;
   text-indent: 10px;
+  outline: none;
 }
 
 .right .card ::-webkit-input-placeholder {
@@ -169,11 +171,34 @@ body {
   margin: 0 auto;
   color: #d6d5db;
   font-weight: 400;
-  font-size: 7px;
+  font-size: 8px;
 }
 
 .right .card p a {
   color: #fa898b;
+}
+
+.right .card .error {
+  color: #fa898b;
+  padding-left: 50%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: none;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.right .card .error-icon1, .right .card .error-icon2, .right .card .error-icon3, .right .card .error-icon4 {
+  position: absolute;
+  bottom: 45px;
+  right: 10px;
+  content: url("../images/icon-error.svg");
+  display: none;
+}
+
+.right .card .firstName, .right .card .lastName, .right .card .email, .right .card .password {
+  position: relative;
 }
 
 @media screen and (max-width: 1440px) {
@@ -211,6 +236,14 @@ body {
     margin: 10px 20px;
     font-size: 18px;
     line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 974px) {
+  .container {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
 }
 /*# sourceMappingURL=styles.css.map */
