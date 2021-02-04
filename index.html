@@ -98,8 +98,8 @@
 				var lastName = document.getElementById('LastName');
 				var email = document.getElementById('Email');
 				var password = document.getElementById('Password');
-
-				if (firstName.innerText === '') {
+console.log(firstName.innerText);
+				if (firstName.value === '') {
 					document.getElementById('error-first-name').style.display = 'block';
 					document.getElementById('error1').style.display = 'block';
 				} else {
@@ -107,7 +107,7 @@
 					document.getElementById('error1').style.display = 'none';
 				}
 
-				if (lastName.innerText === '') {
+				if (lastName.value === '') {
 					document.getElementById('error-last-name').style.display = 'block';
 					document.getElementById('error2').style.display = 'block';
 				} else {
@@ -115,7 +115,7 @@
 					document.getElementById('error2').style.display = 'none';
 				}
 
-				if (email.innerText === '') {
+				if (email.value === '') {
 					document.getElementById('error-email').style.display = 'block';
 					document.getElementById('error3').style.display = 'block';
 				} else {
@@ -123,7 +123,7 @@
 					document.getElementById('error3').style.display = 'none';
 				}
 
-				if (password.innerText === '') {
+				if (password.value === '') {
 					document.getElementById('error-password').style.display = 'block';
 					document.getElementById('error4').style.display = 'block';
 				} else {
