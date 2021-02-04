@@ -152,7 +152,7 @@ body {
     .container {
         background: url("../images/bg-intro-mobile.png"), rgb(255, 121, 120);
         width: 99%;
-        min-height: 950px;
+        min-height: 1000px;
         padding: 20px;
         justify-content: center;
     }
@@ -179,6 +179,12 @@ body {
                 margin: 10px 20px;
                 font-size: 18px;
                 line-height: 40px;
+            }
+        }
+        .card{
+            .error{
+                float:right;
+
             }
         }
     }
