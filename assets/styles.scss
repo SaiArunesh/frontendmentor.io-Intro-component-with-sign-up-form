@@ -133,7 +133,7 @@ body {
         }
         .error-icon1, .error-icon2, .error-icon3, .error-icon4{
             position: absolute;
-            bottom:45px;
+            bottom:37px;
             right:10px;
             content: url('../images/icon-error.svg');
             display: none;
@@ -189,6 +189,7 @@ min-height: 95vh;
             padding-bottom:0;
             .error{
                 float:right;padding-left:0;
+              
 
             }
         }

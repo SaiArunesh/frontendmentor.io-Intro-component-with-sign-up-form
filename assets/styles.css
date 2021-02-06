@@ -192,7 +192,7 @@ body {
 
 .right .card .error-icon1, .right .card .error-icon2, .right .card .error-icon3, .right .card .error-icon4 {
   position: absolute;
-  bottom: 45px;
+  bottom: 37px;
   right: 10px;
   content: url("../images/icon-error.svg");
   display: none;
