@@ -51,7 +51,7 @@ body {
 }
 
 .right {
-    margin: 75px auto 0 0;
+    margin: 0 auto 0 0;
 
     max-width: 475px;
     max-height: 550px;
@@ -144,16 +144,21 @@ body {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
     body {
-        height: initial;
+        height:150vh;
+
+        display: initial;
+        
+
     }
 
     .container {
         background: url("../images/bg-intro-mobile.png"), rgb(255, 121, 120);
         width: 99%;
-        min-height: 1500px;
+        
         padding: 20px;
+        min-height: 60vh;
         justify-content: center;
     }
 

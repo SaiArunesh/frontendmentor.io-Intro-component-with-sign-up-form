@@ -88,7 +88,8 @@
 				Challenge by
 				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
+				>. Coded by
+				<a href="https://saiarunesh.github.io/portfolio/">Sai Arunesh</a>.
 			</p>
 		</footer>
 
@@ -98,7 +99,6 @@
 				var lastName = document.getElementById('LastName');
 				var email = document.getElementById('Email');
 				var password = document.getElementById('Password');
-console.log(firstName.innerText);
 				if (firstName.value === '') {
 					document.getElementById('error-first-name').style.display = 'block';
 					document.getElementById('error1').style.display = 'block';
@@ -115,12 +115,17 @@ console.log(firstName.innerText);
 					document.getElementById('error2').style.display = 'none';
 				}
 
-				if (email.value === '') {
-					document.getElementById('error-email').style.display = 'block';
-					document.getElementById('error3').style.display = 'block';
-				} else {
+				if (/^.+@.+\..+$/.test(email.value)) {
 					document.getElementById('error-email').style.display = 'none';
 					document.getElementById('error3').style.display = 'none';
+					document.getElementById('Email').style.color = 'black';
+					document.getElementById('Email').style.fontWeight = '400';
+				} else {
+					document.getElementById('error-email').style.display = 'block';
+					document.getElementById('error3').style.display = 'block';
+
+					document.getElementById('Email').style.color = 'rgb(255, 121, 120)';
+					document.getElementById('Email').style.fontWeight = '700';
 				}
 
 				if (password.value === '') {
