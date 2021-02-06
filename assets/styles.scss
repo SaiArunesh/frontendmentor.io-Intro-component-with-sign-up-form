@@ -89,17 +89,18 @@ body {
         input {
             margin-bottom: 20px;
             min-height: 57px;
-            border-radius: 10px;
+            border-radius: 6px;
             width: 100%;
             color: black;
-            font-weight: 500;
+            font-weight: 700;
             text-indent: 10px;
             outline: none;
-            border:1px solid black;
+            border:1px solid rgb(176, 176, 178);
+            letter-spacing: 1.25px;
         }
         ::placeholder {
             color: rgb(176, 176, 178);
-            font-weight: 500;
+            font-weight: 700;
         }
         button {
             max-height: 55px;
@@ -107,10 +108,12 @@ body {
             border: none;
             background: rgb(55, 204, 138);
             box-shadow: 0px 5px 10px -6px rgb(84, 172, 134);
-            border-radius: 20px;
+            border-radius: 6px;
             height: 60px;
             color: white;
             margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 1.1px;
         }
         p {
             margin: 0 auto;

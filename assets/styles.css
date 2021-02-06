@@ -126,33 +126,34 @@ body {
 .right .card input {
   margin-bottom: 20px;
   min-height: 57px;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
   color: black;
-  font-weight: 500;
+  font-weight: 700;
   text-indent: 10px;
   outline: none;
-  border: 1px solid black;
+  border: 1px solid #b0b0b2;
+  letter-spacing: 1.25px;
 }
 
 .right .card ::-webkit-input-placeholder {
   color: #b0b0b2;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .right .card :-ms-input-placeholder {
   color: #b0b0b2;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .right .card ::-ms-input-placeholder {
   color: #b0b0b2;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .right .card ::placeholder {
   color: #b0b0b2;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .right .card button {
@@ -162,10 +163,12 @@ body {
   background: #37cc8a;
   -webkit-box-shadow: 0px 5px 10px -6px #54ac86;
           box-shadow: 0px 5px 10px -6px #54ac86;
-  border-radius: 20px;
+  border-radius: 6px;
   height: 60px;
   color: white;
   margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
 }
 
 .right .card p {
