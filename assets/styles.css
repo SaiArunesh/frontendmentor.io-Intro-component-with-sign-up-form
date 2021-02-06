@@ -204,14 +204,15 @@ body {
 
 @media screen and (max-width: 1439px) {
   body {
-    height: 150vh;
+    height: initial;
     display: initial;
   }
   .container {
     background: url("../images/bg-intro-mobile.png"), #ff7978;
     width: 99%;
+    height: initial;
+    min-height: 95vh;
     padding: 20px;
-    min-height: 60vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -226,6 +227,7 @@ body {
     text-align: center;
   }
   .right {
+    max-height: 800px;
     margin: 0;
     padding: 5px;
   }
@@ -238,6 +240,9 @@ body {
     margin: 10px 20px;
     font-size: 18px;
     line-height: 40px;
+  }
+  .right .card {
+    padding-bottom: 0;
   }
   .right .card .error {
     float: right;
